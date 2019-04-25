@@ -6,12 +6,12 @@
 </head>
 <body>
   <form action="" method="post">
-    <input type="hidden" name="id" value="<?= $_GET['id']; ?>">
-    <input type="text" name="todo" value="<?= $_GET['id']; ?>">
+    <input type="hidden" name="id" value="">
+    <input type="text" name="todo" value="">
     <input type="submit" value="更新">
   </form>
   <div>
-    <a href="index.php">一覧へもどる</a>
+    <a href="index.php"> TODOリストへもどる</a>
   </div>
 </body>
 </html>

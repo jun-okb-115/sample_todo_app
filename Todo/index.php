@@ -5,9 +5,9 @@
   <title>Home</title>
 </head>
 <body>
-  welcome hello world
+  TODO APP
   <div>
-     <a href="new.php">
+     <a href="create.php">
        <p>新規作成</p>
      </a>
   </div>
@@ -19,21 +19,19 @@
         <th>更新</th>
         <th>削除</th>
       </tr>
-      <?php foreach (todoList() as $todo) : ?>
         <tr>
-          <td><?= $todo['id']; ?></td>
-          <td><?= $todo['todo']; ?></td>
+          <td></td>
+          <td></td>
           <td>
-            <a href="edit.php?id=<?= $todo['id']; ?>">更新</a>
+            <a href="edit.php">更新</a>
           </td>
           <td>
-            <form action="store.php" method="post">
-              <input type="hidden" name="id" value="<?= $todo['id']; ?>">
+            <form action="" method="post">
+              <input type="hidden" name="id" value="">
               <button type="submit">削除</button>
             </form>
           </td>
         </tr>
-      <?php endforeach; ?>
     </table>
   </div>
 </body>
